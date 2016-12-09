@@ -7,4 +7,4 @@ The goal is to implement all the methods in Util, using the Stream and Lambda AP
 
 Repeat until you can implement all the methods blindfolded ;-)
 
-PS: Solution in commit 6b175e7
+

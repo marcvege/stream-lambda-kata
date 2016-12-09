@@ -5,46 +5,65 @@ import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 import java.util.IntSummaryStatistics;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
+
+import static java.util.stream.Collectors.*;
 
 public class Util {
 
     public static List<String> mapToUppercase(List<String> input) {
-        throw new NotImplementedException();    }
+        return input.stream().
+                map(String::toUpperCase).
+                collect(toList());
+    }
 
-    public static List<String> removeElementsWithMoreThanFourCharacters(List<String> input) {
-        throw new NotImplementedException();    }
+    public static List<String> removeElementsWithMoreThanThreeCharacters(List<String> input) {
+        return input.stream().
+                filter(s-> !(s.length() > 3)).
+                collect(toList());
+    }
 
     public static List<String> sortStrings(List<String> input) {
-        throw new NotImplementedException();    }
+        throw new NotImplementedException();
+    }
 
     public static List<Integer> sortIntegers(List<String> input) {
-        throw new NotImplementedException();    }
+        throw new NotImplementedException();
+    }
 
     public static List<Integer> sortIntegersDescending(List<String> input) {
-        throw new NotImplementedException();    }
+        throw new NotImplementedException();
+    }
 
     public static Integer sum(List<Integer> numbers) {
-        throw new NotImplementedException();    }
+        throw new NotImplementedException();
+    }
 
     public static List<String> flattenToSingleCollection(List<List<String>> input) {
         throw new NotImplementedException();
     }
 
     public static String separateNamesByComma(List<Person> input) {
-        throw new NotImplementedException();    }
+        throw new NotImplementedException();
+    }
 
     public static String findNameOfOldestPerson(List<Person> input) {
-        throw new NotImplementedException();    }
+        throw new NotImplementedException();
+    }
 
     public static List<String> filterPeopleLessThan18YearsOld(List<Person> input) {
-        throw new NotImplementedException();    }
+        throw new NotImplementedException();
+    }
 
     public static IntSummaryStatistics getSummaryStatisticsForAge(List<Person> input) {
-        throw new NotImplementedException();    }
+        throw new NotImplementedException();
+    }
 
     public static Map<Boolean, List<Person>> partitionAdults(List<Person> input) {
-        throw new NotImplementedException();    }
+        throw new NotImplementedException();
+    }
 
     public static Map<String, List<Person>> partitionByNationality(List<Person> input) {
-        throw new NotImplementedException();    }
+        throw new NotImplementedException();
+    }
 }
